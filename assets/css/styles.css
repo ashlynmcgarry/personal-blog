@@ -1,0 +1,102 @@
+/* Base styling */
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+:root {
+    --orange: #FBB03B;
+    --pink: #FF5F6D;
+    --dark-orange: #f09d17;
+    --dark-border: rgb(37, 37, 37)
+}
+
+/* Elemental styling */
+header {
+    border-bottom: double;
+    border-width: 7px;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    color: black;
+}
+
+a {
+    color: var(--dark-orange);
+}
+
+footer {
+    border-top: double;
+    border-width: 7px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+p {
+    margin: 15px 0 20px 15px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Class stylings */
+.footer-style {
+    text-align: center;
+    padding: 10px;
+    font-size: 24px;
+}
+
+.circle {
+    position: relative;
+    z-index: 1;
+}
+
+.circle::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(to bottom, var(--pink), var(--orange));
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.heading-container {
+    width: 50vw;
+}
+
+.switch-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.checkbox {
+    margin: 15px 30px 20px 15px;
+    accent-color: var(--pink);
+}
+
+.body-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+/* Light mode styles */
+body.light-mode {
+    background-color: white;
+    color: black;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: var(--dark-border);
+    color: white;
+}

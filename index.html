@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My First Blog | Homepage</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/form.css" />
+</head>
+
+<body>
+
+    <header>
+        <div class="switch-container">
+            <p>Enable dark mode</p>
+            <input type="checkbox" id="toggle" class="checkbox" />
+            <label for="toggle" class="switch"></label>
+        </div>
+    </header>
+
+    <main>
+        <div class="body-container">
+            <section class="heading-container">
+                <h1 class="circle">My First Blog</h1>
+            </section>
+
+            <section class="form-section">
+                <h2>What's on your mind?</h2>
+                <form class="whole-form">
+                    <label for="username">Username:</label><br>
+                    <input type="text" id="username" name="username"><br>
+                    <label for="title">Title:</label><br>
+                    <input type="text" id="title" name="title"><br>
+                    <label for="content">Content:</label><br>
+                    <textarea type="text" id="content" class="content-field" name="content"></textarea><br>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <ul class="footer-style">
+            <li>Made by Ashlyn McGarry</li>
+            <li><a href="https://github.com/ashlynmcgarry">Github</a></li>
+            <li><a href="https://ashlynmcgarry.github.io/professional-portfolio/">Portfolio</a></li>
+        </ul>
+    </footer>
+    <script src="./assets/js/logic.js"></script>
+    <script src="./assets/js/form.js"></script>
+</body>
+
+</html>
