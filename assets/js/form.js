@@ -19,6 +19,7 @@ form.addEventListener('submit', function (event) {
 
     if (!username || !title || !content) {
         alert('Please complete the form.');
+        preventDefault();
     }
 
     let existingData = JSON.parse(localStorage.getItem('formData')) || [];
