@@ -10,7 +10,7 @@ function addItemsToMain() {
             const formDataDiv = document.createElement('div');
 
             formDataDiv.innerHTML =
-                `<h3>${data.title}</h3>
+                `<h2>${data.title}</h2>
             <p>Posted by:<br>${data.username}</p>
             <p>Content:<br>${data.content}</p>`;
 
