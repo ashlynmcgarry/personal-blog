@@ -13,7 +13,7 @@ form.addEventListener('submit', function (event) {
         content: content.value,
     };
 
-    if (!username || !title || !content) {
+    if (!username.value || !title.value || !content.value) {
         alert('Please complete the form.');
         preventDefault();
     }
