@@ -2,19 +2,15 @@
 const username = document.getElementById('username');
 const title = document.getElementById('title');
 const content = document.getElementById('content');
-
 const form = document.querySelector('.whole-form');
+
 form.addEventListener('submit', function (event) {
     event.preventDefault();
 
-    const username = document.getElementById('username').value;
-    const title = document.getElementById('title').value;
-    const content = document.getElementById('content').value;
-
     const newFormData = {
-        username: username,
-        title: title,
-        content: content
+        username: username.value,
+        title: title.value,
+        content: content.value,
     };
 
     if (!username || !title || !content) {
